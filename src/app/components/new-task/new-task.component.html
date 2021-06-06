@@ -1,14 +1,15 @@
 <div class="newTask">
   <div>
     <label for="text">Task</label>
-    <input type="text" id="text" />
+    <input type="text" id="text" [(ngModel)]="text" />
   </div>
   <div>
     <label for="time">Date & Time</label>
-    <input type="text" id="time" />
+    <input type="text" id="time" [(ngModel)]="time" />
   </div>
   <div>
     <label for="reminder">Set Reminder</label>
-    <input type="checkbox" name="" id="reminder" />
+    <input type="checkbox" name="" id="reminder" [(ngModel)]="reminder" />
   </div>
+  <button (click)="onSubmit()">Submit</button>
 </div>
