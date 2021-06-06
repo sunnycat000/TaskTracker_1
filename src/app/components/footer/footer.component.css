@@ -1,0 +1,11 @@
+div {
+  width: 200px;
+  margin: auto;
+}
+p {
+  text-align: center;
+}
+a {
+  display: block;
+  text-align: center;
+}
