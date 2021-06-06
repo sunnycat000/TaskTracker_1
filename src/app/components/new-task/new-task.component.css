@@ -1,0 +1,21 @@
+.newTask {
+  margin-left: 10px;
+}
+
+div {
+  margin: 10px;
+}
+
+button {
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+}
+
+input {
+  border: 1px solid rgb(197, 197, 196);
+  border-radius: 3px;
+}

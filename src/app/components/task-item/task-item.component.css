@@ -1,0 +1,26 @@
+.tasks {
+  background-color: rgb(241, 239, 239);
+  margin: 10px;
+  padding: 10px;
+}
+p {
+  padding-top: 10px;
+  font-size: small;
+}
+
+h3 {
+  font-weight: 500;
+}
+input {
+  border: none;
+  height: 25px;
+  background-color: rgb(205, 239, 243);
+}
+button {
+  float: right;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 16px;
+  color: rgb(211, 81, 125);
+}

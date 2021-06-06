@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctor Appointments",
-      "time": "5/19/2021 2pm",
-      "reminder": true
-    },
-    {
       "id": 2,
       "text": "Tennis Class",
       "time": "5/12/2021 6:30pm",
@@ -17,6 +11,12 @@
       "time": "5/30/21 9am",
       "reminder": true,
       "id": 3
+    },
+    {
+      "text": "Wash Clothes",
+      "time": "5/20/2021 7pm",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
