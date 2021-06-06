@@ -20,15 +20,15 @@ export class TaskService {
   }
 
   getTask(task: Task): Observable<Task> {
-    return this.http.get<Task>(`${this.http}/${task.id}`);
+    return this.http.get<Task>(`${this.apiUrl}/${task.id}`);
   }
 
   deleteTask(task: Task): Observable<Task> {
-    return this.http.delete<Task>(`${this.http}/${task.id}`);
+    return this.http.delete<Task>(`${this.apiUrl}/${task.id}`);
   }
 
   updateTask(task: Task): Observable<Task> {
-    return this.http.patch<Task>(`${this.http}/${task.id}`, task);
+    return this.http.patch<Task>(`${this.apiUrl}/${task.id}`, task);
   }
 
   addTask(task: Task): Observable<Task> {

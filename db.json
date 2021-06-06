@@ -13,10 +13,10 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "Meet with Friends",
-      "time": "5/20/2021 12pm",
-      "reminder": false
+      "text": "Plant flower",
+      "time": "5/30/21 9am",
+      "reminder": true,
+      "id": 3
     }
   ]
 }

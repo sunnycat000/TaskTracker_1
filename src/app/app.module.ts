@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ToggleBtnComponent } from './components/toggle-btn/toggle-btn.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { NewTaskComponent } from './components/new-task/new-task.component';
+import { TaskItemComponent } from './components/task-item/task-item.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NewTaskComponent } from './components/new-task/new-task.component';
     ToggleBtnComponent,
     TasksComponent,
     NewTaskComponent,
+    TaskItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

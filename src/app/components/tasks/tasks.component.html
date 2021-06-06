@@ -1,7 +1,6 @@
 <app-new-task (newTask)="addTask($event)"></app-new-task>
-<div class="tasks">
-  <div class="task" *ngFor="let task of tasks">
-    <p>{{ task.text }}</p>
-    <p>{{ task.time }}</p>
-  </div>
-</div>
+<app-task-item
+  [task]="task"
+  (deleteTask)="onDelete(task)"
+  *ngFor="let task of tasks"
+></app-task-item>
