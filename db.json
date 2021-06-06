@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": 1,
-      "text": "Doctor Appointment",
+      "text": "Doctor Appointments",
       "time": "5/19/2021 2pm",
       "reminder": true
     },

@@ -28,4 +28,10 @@ export class TasksComponent implements OnInit {
       this.tasks.filter((t) => t.id !== task.id);
     });
   }
+
+  onEdit(task: Task, index: number) {
+    this.taskService.updateTask(task).subscribe((value) => {
+      this.tasks.splice(index, 1, task);
+    });
+  }
 }

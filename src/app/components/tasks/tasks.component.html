@@ -2,5 +2,6 @@
 <app-task-item
   [task]="task"
   (deleteTask)="onDelete(task)"
-  *ngFor="let task of tasks"
+  (editTask)="onEdit(task, index)"
+  *ngFor="let task of tasks; let key = index"
 ></app-task-item>

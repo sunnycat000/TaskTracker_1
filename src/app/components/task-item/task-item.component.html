@@ -1,7 +1,14 @@
-<div class="tasks">
+<div class="tasks" *ngIf="!isEditing" (dblclick)="onEdit(task)">
   <p>
     {{ task.text }}
     <button (click)="onDelete(task)">x</button>
   </p>
   <p>{{ task.time }}</p>
+</div>
+<div class="tasks" *ngIf="isEditing" (keyup.enter)="finishEditing(task)">
+  <div>
+    <input type="text" [value]="task.text" [(ngModel)]="task.text" />
+    <button (click)="onDelete(task)">x</button>
+  </div>
+  <input type="text" [value]="task.time" [(ngModel)]="task.time" />
 </div>
