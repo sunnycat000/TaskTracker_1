@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 @Component({
   selector: 'app-toggle-btn',
   templateUrl: './toggle-btn.component.html',
   styleUrls: ['./toggle-btn.component.css'],
 })
 export class ToggleBtnComponent implements OnInit {
-  text: string = 'test';
-  color: string = 'red';
+  @Input() text: string;
+  @Input() color: string;
+  @Output() btnClicked = new EventEmitter();
   constructor() {}
 
   ngOnInit(): void {}
   toggle() {
-    console.log('toggle');
+    this.btnClicked.emit();
   }
 }

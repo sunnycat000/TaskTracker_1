@@ -1,4 +1,4 @@
-<div class="newTask">
+<div class="newTask" *ngIf="showAddTask">
   <div>
     <label for="text">Task</label>
     <input type="text" id="text" [(ngModel)]="text" />

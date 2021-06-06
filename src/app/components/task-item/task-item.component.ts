@@ -25,12 +25,6 @@ export class TaskItemComponent implements OnInit {
     this.isEditing = true;
   }
   finishEditing(task: Task) {
-    // const editedTask = {
-    //   id: this.task.id,
-    //   text: this.editedText,
-    //   time: this.editedTime,
-    //   reminder: this.task.reminder,
-    // };
     this.editTask.emit(task);
     this.isEditing = false;
   }
